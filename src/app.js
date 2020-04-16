@@ -29,7 +29,7 @@ app.put("/repositories/:id", (request, response) => {
 
   const repoIndex = repositories.findIndex(r => r.id === id);
   if (repoIndex < 0) {
-    return response.status(400).json({ error: 'Repository is not exist' });
+    return response.status(400).json({ error: 'Repository does not exist' });
   }
 
   const likes = repositories[repoIndex].likes;
@@ -45,7 +45,7 @@ app.delete("/repositories/:id", (request, response) => {
 
   const repoIndex = repositories.findIndex(r => r.id === id);
   if (repoIndex < 0) {
-    return response.status(400).json({ error: 'Repository is not exist' });
+    return response.status(400).json({ error: 'Repository does not exist' });
   }
 
   repositories.splice(repoIndex, 1);
@@ -58,7 +58,7 @@ app.post("/repositories/:id/like", (request, response) => {
 
   const repoIndex = repositories.findIndex(r => r.id === id);
   if (repoIndex < 0) {
-    return response.status(400).json({ error: 'Repository is not exist' });
+    return response.status(400).json({ error: 'Repository does not exist' });
   }
 
   repositories[repoIndex].likes++;
