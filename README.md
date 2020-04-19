@@ -2,10 +2,11 @@
 
 Criar uma aplicação para armazenar repositórios do seu portfólio, que irá permitir a criação, listagem, atualização e remoção dos repositórios, e além disso permitir que os repositórios possam receber "likes".
 
-### Para Rodar a aplicação
+###  Comandos necessários para:
 
-- Executar o comando `yarn` no seu terminal
-- Após executar o comando `yarn test`
+- Executar o comando `yarn` no seu terminal, instalar as dependencias.
+- Após executar o comando `yarn test`, executar o test.
+- Executar o comando `yarn dev`, mantém a aplicação rodando.
 
 ### Rotas da aplicação
 
